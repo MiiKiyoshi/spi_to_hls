@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src_hls/tb_divide_sum.cpp in debug mode
+   Compiling ../../../../src_hls/divide_sum.cpp in debug mode
+   Generating csim.exe
+Test Case:
+  Inputs:
+    in_val1[0] = 1, in_val2[0] = 10
+    in_val1[1] = 2, in_val2[1] = 20
+    in_val1[2] = 3, in_val2[2] = 30
+    in_val1[3] = 4, in_val2[3] = 40
+    in_val1[4] = 5, in_val2[4] = 50
+    in_val1[5] = 60, in_val2[5] = 6
+    in_val1[6] = 70, in_val2[6] = 7
+    in_val1[7] = 80, in_val2[7] = 8
+    in_val1[8] = 90, in_val2[8] = 9
+    in_val1[9] = 100, in_val2[9] = 10
+  Outputs:
+    out_result1 (cumulative sum of divisions) = 50
+    out_result2 (cumulative sum of inverse divisions) = 50
+  Verification:
+    Expected out_result1 = 50
+    Expected out_result2 = 50
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

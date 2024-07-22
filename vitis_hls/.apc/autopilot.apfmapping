@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="divide_sum.cpp" path="C:\works\verilog\kria_prj\spi_divide_sum\src_hls\divide_sum.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_divide_sum.cpp" path="C:\works\verilog\kria_prj\spi_divide_sum\src_hls\tb_divide_sum.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

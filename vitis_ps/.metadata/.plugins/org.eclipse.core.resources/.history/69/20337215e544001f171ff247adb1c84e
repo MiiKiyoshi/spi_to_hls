@@ -1,0 +1,78 @@
+#include <stdio.h>
+#include <unistd.h>  // usleep은 이 헤더에 있습니다.
+#include "spi_to_hls_driver.h"
+
+#define CLEAR_SCREEN "\e[1;1H\e[2J"
+
+void printStatus() {
+    printf(CLEAR_SCREEN);
+    printf("SPI to HLS Status Monitor\n");
+    printf("-------------------------\n\n");
+
+    // SYSTEM_CONTROL_REG
+    uint32_t systemControl = SYSTEM_CONTROL;
+    printf("System Control:\n");
+    printf("  Soft Reset: %ld\n\n", systemControl & 0x1);
+
+    // SPI_STATUS_REG
+    uint32_t spiStatus = SPI_STATUS;
+    printf("SPI Status:\n");
+    printf("  Store Word Complete: %ld\n", (spiStatus >> 18) & 1);
+    printf("  Store Vals Complete: %ld\n", (spiStatus >> 17) & 1);
+    printf("  Load Vals Complete: %ld\n", (spiStatus >> 16) & 1);
+    printf("  Byte Counter: %ld\n", (spiStatus >> 10) & 3);
+    printf("  Store Addr Counter: %ld\n", (spiStatus >> 6) & 0xF);
+    printf("  Load Addr Counter: %ld\n", (spiStatus >> 2) & 0xF);
+    printf("  State: %ld\n\n", spiStatus & 3);
+
+    // SPI_DATA_REG
+    uint32_t spiData = SPI_DATA;
+    printf("SPI Data:\n");
+    printf("  RX Valid: %ld\n", (spiData >> 17) & 1);
+    printf("  TX Valid: %ld\n", (spiData >> 16) & 1);
+    printf("  RX Data: 0x%02X\n", (unsigned int)((spiData >> 8) & 0xFF));
+    printf("  TX Data: 0x%02X\n\n", (unsigned int)(spiData & 0xFF));
+
+    // DATA_BUFFER_REG
+    uint32_t dataBuffer = DATA_BUFFER;
+    printf("Data Buffer: 0x%08lX\n\n", dataBuffer);
+
+    // HLS_STATUS_REG
+    uint32_t hlsStatus = HLS_STATUS;
+    printf("HLS Status:\n");
+    printf("  AP Done Latch: %ld\n", (hlsStatus >> 5) & 1);
+    printf("  Select: %ld\n", (hlsStatus >> 4) & 1);
+    printf("  AP Start: %ld\n", (hlsStatus >> 3) & 1);
+    printf("  AP Done: %ld\n", (hlsStatus >> 2) & 1);
+    printf("  AP Idle: %ld\n", (hlsStatus >> 1) & 1);
+    printf("  AP Ready: %ld\n\n", hlsStatus & 1);
+
+    // RESULT1_REG
+    int32_t result1 = RESULT1;
+    printf("Result 1: %ld\n", result1);
+
+    // RESULT2_REG
+    int32_t result2 = RESULT2;
+    printf("Result 2: %ld\n\n", result2);
+
+    // BRAM_DATA_OUT1_REG
+    uint32_t bramDataOut1 = BRAM_DATA_OUT1;
+    printf("BRAM Data Out 1: 0x%08X\n", (unsigned int)bramDataOut1);
+
+    // BRAM_DATA_OUT2_REG
+    uint32_t bramDataOut2 = BRAM_DATA_OUT2;
+    printf("BRAM Data Out 2: 0x%08X\n", (unsigned int)bramDataOut2);
+
+    // BRAM_ADDR_REG
+    uint32_t bramAddr = BRAM_ADDR;
+    printf("BRAM Address: %ld\n\n", bramAddr);
+}
+
+int main() {
+    while(1){
+        printStatus();
+        usleep(1000);
+    }
+
+    return 0;
+}

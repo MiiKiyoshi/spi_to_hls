@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <sleep.h>
+#include "spi_to_hls_driver.h"
+
+#define CLEAR_SCREEN "\e[1;1H\e[2J"
+
+void printStatus() {
+    printf(CLEAR_SCREEN);
+    printf("HLS Status Monitor\n");
+    printf("------------------\n\n");
+
+    // SYSTEM_CONTROL_REG
+    uint32_t systemControl = SpiToHls_ReadSystemControl();
+    printf("System Control:\n");
+    printf("  Soft Reset: %d\n\n", systemControl & 0x1);
+
+    // DATA_BUFFER_REG
+    uint32_t dataBuffer = SpiToHls_ReadDataBuffer();
+    printf("Data Buffer: 0x%08X\n\n", dataBuffer);
+
+    // HLS_STATUS_REG
+    uint32_t hlsStatus = SpiToHls_ReadHlsStatus();
+    printf("HLS Status:\n");
+    printf("  AP Done Latch: %d\n", (hlsStatus >> 5) & 1);
+    printf("  Select: %d\n", (hlsStatus >> 4) & 1);
+    printf("  AP Start: %d\n", (hlsStatus >> 3) & 1);
+    printf("  AP Done: %d\n", (hlsStatus >> 2) & 1);
+    printf("  AP Idle: %d\n", (hlsStatus >> 1) & 1);
+    printf("  AP Ready: %d\n\n", hlsStatus & 1);
+
+    // RESULT1_REG
+    int32_t result1 = (int32_t)SpiToHls_ReadResult1();
+    printf("Result 1: %d\n", result1);
+
+    // RESULT2_REG
+    int32_t result2 = (int32_t)SpiToHls_ReadResult2();
+    printf("Result 2: %d\n\n", result2);
+
+    // BRAM_DATA_OUT1_REG
+    uint32_t bramDataOut1 = SpiToHls_ReadBramDataOut1();
+    printf("BRAM Data Out 1: 0x%08X\n", bramDataOut1);
+
+    // BRAM_DATA_OUT2_REG
+    uint32_t bramDataOut2 = SpiToHls_ReadBramDataOut2();
+    printf("BRAM Data Out 2: 0x%08X\n", bramDataOut2);
+
+    // BRAM_ADDR_REG
+    uint32_t bramAddr = SpiToHls_ReadBramAddr();
+    printf("BRAM Address: %d\n\n", bramAddr);
+}
+
+int main() {
+    while (1) {
+        printStatus();
+        usleep(1000000); // 1 second
+    }
+    return 0;
+}

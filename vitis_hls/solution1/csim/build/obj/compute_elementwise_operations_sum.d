@@ -1,0 +1,22 @@
+obj/compute_elementwise_operations_sum.o: \
+ ../../../../src_hls/compute_elementwise_operations_sum.cpp \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/ap_int.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_decl.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/hls_half.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/gmp.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/mpfr.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/gmp.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/mpfr.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_x_utils.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_base.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_ref.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_int_special.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/ap_fixed.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_base.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_ref.h \
+ G:/TOOLS/Xilinx/Vitis_HLS/2023.2/include/etc/ap_fixed_special.h

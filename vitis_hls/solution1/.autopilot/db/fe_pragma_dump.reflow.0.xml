@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="src_hls/divide_sum.cpp" line="11" pragmaType="pipeline" parentfunction="divide_sum" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="src_hls/divide_sum.cpp" line="2" pragmaType="interface" parentfunction="divide_sum" mode="ap_memory" port="in_val1" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="src_hls/divide_sum.cpp" line="3" pragmaType="interface" parentfunction="divide_sum" mode="ap_memory" port="in_val2" storage_type="-1" impl="-1" latency="-1" name="" depth="-1"/>
+<pragma file="src_hls/divide_sum.cpp" line="4" pragmaType="interface" parentfunction="divide_sum" mode="ap_vld" port="out_result1" name="" register="0"/>
+<pragma file="src_hls/divide_sum.cpp" line="5" pragmaType="interface" parentfunction="divide_sum" mode="ap_vld" port="out_result2" name="" register="0"/>
+</pragmas>

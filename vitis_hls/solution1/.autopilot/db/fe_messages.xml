@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=divide_sum" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_hls/divide_sum.cpp:2:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_memory port=in_val1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_hls/divide_sum.cpp:3:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_memory port=in_val2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_hls/divide_sum.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_vld port=out_result1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_hls/divide_sum.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_vld port=out_result2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_hls/divide_sum.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="divide_sum" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

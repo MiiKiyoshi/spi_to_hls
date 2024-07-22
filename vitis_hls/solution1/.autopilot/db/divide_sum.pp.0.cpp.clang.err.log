@@ -1,0 +1,19 @@
+C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=name=divide_sum_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=divide_sum
+        ^
+src_hls/divide_sum.cpp:2:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=mode=ap_memory port=in_val1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_memory port=in_val1
+        ^
+src_hls/divide_sum.cpp:3:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=mode=ap_memory port=in_val2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_memory port=in_val2
+        ^
+src_hls/divide_sum.cpp:4:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=mode=ap_vld port=out_result1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_vld port=out_result1
+        ^
+src_hls/divide_sum.cpp:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=mode=ap_vld port=out_result2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE mode=ap_vld port=out_result2
+        ^
+src_hls/divide_sum.cpp:11:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=divide_sum_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE
+        ^
+6 warnings generated.

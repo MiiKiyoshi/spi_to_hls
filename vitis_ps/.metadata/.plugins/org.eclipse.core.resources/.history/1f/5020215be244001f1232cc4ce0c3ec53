@@ -1,0 +1,42 @@
+#include "spi_to_hls_driver.h"
+#include "xil_io.h"
+
+uint32_t SpiToHls_ReadSystemControl(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + SYSTEM_CONTROL_REG);
+}
+
+uint32_t SpiToHls_ReadDataBuffer(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + DATA_BUFFER_REG);
+}
+
+uint32_t SpiToHls_ReadHlsStatus(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + HLS_STATUS_REG);
+}
+
+uint32_t SpiToHls_ReadResult1(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + RESULT1_REG);
+}
+
+uint32_t SpiToHls_ReadResult2(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + RESULT2_REG);
+}
+
+uint32_t SpiToHls_ReadBramDataOut1(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + BRAM_DATA_OUT1_REG);
+}
+
+uint32_t SpiToHls_ReadBramDataOut2(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + BRAM_DATA_OUT2_REG);
+}
+
+uint32_t SpiToHls_ReadBramAddr(void) {
+    return Xil_In32(SPI_TO_HLS_BASEADDR + BRAM_ADDR_REG);
+}
+
+bool SpiToHls_IsDone(void) {
+    return (SpiToHls_ReadHlsStatus() & 0x4) != 0;  // Check AP_DONE bit
+}
+
+#ifndef SPI_TO_HLS_DRIVER_H
+#define SPI_TO_HLS_DRIVER_H
+

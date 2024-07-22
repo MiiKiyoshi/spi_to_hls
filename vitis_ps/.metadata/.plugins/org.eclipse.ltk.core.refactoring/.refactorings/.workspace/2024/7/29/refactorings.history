@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;spi_divide_sum/src/spi_to_hls_driver.cpp&apos;" deleteContents="false" description="Delete resource &apos;spi_divide_sum/src/spi_to_hls_driver.cpp&apos;" element1="/spi_divide_sum/src/spi_to_hls_driver.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1721292445424"/>
+</session>

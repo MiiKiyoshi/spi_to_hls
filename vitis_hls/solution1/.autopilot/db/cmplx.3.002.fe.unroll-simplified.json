@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "divide_sum.cpp",
+    "fileloc": 1,
+    "instructions": 35,
+    "loads": {
+      "T": 3
+    },
+    "name": "divide_sum",
+    "stores": {
+      "T": 4
+    },
+    "total_instructions": 35
+  }
+}

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jul 16 11:44:40 2024
+# Process ID: 2460
+# Current directory: C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/divide_sum/xsim_script.tcl}
+# Log file: C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/xsim.log
+# Journal file: C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog\xsim.jou
+# Running On: MiKiyoshi, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 16518 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/divide_sum/xsim_script.tcl
+open_wave_config divide_sum_dataflow_ana.wcfg
+source divide_sum.tcl
+close_sim

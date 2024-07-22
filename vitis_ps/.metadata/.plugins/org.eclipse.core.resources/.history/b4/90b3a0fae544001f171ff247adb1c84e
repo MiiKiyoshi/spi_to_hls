@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <unistd.h>
+#include "spi_to_hls_driver.h"
+
+void printStatus() {
+    printf("SPI to HLS Status Monitor\n");
+    printf("-------------------------\n\n");
+
+    // System Control and SPI Status
+    uint32_t systemControl = SYSTEM_CONTROL;
+    uint32_t spiStatus = SPI_STATUS;
+    printf("System Control: Soft Reset=%ld | ", systemControl & 0x1);
+    printf("SPI Status: Store Word=%ld, Store Vals=%ld, Load Vals=%ld, Byte Cnt=%ld, Store Addr=%ld, Load Addr=%ld, State=%ld\n",
+           (spiStatus >> 18) & 1, (spiStatus >> 17) & 1, (spiStatus >> 16) & 1,
+           (spiStatus >> 10) & 3, (spiStatus >> 6) & 0xF, (spiStatus >> 2) & 0xF, spiStatus & 3);
+
+    // SPI Data and Data Buffer
+    uint32_t spiData = SPI_DATA;
+    uint32_t dataBuffer = DATA_BUFFER;
+    printf("SPI Data: RX Valid=%ld, TX Valid=%ld, RX Data=0x%02X, TX Data=0x%02X | ",
+           (spiData >> 17) & 1, (spiData >> 16) & 1,
+           (unsigned int)((spiData >> 8) & 0xFF), (unsigned int)(spiData & 0xFF));
+    printf("Data Buffer: 0x%08lX\n", dataBuffer);
+
+    // HLS Status
+    uint32_t hlsStatus = HLS_STATUS;
+    printf("HLS Status: AP Done Latch=%ld, Select=%ld, AP Start=%ld, AP Done=%ld, AP Idle=%ld, AP Ready=%ld\n",
+           (hlsStatus >> 5) & 1, (hlsStatus >> 4) & 1, (hlsStatus >> 3) & 1,
+           (hlsStatus >> 2) & 1, (hlsStatus >> 1) & 1, hlsStatus & 1);
+
+    // Results and BRAM Data
+    int32_t result1 = RESULT1;
+    int32_t result2 = RESULT2;
+    uint32_t bramDataOut1 = BRAM_DATA_OUT1;
+    uint32_t bramDataOut2 = BRAM_DATA_OUT2;
+    uint32_t bramAddr = BRAM_ADDR;
+    printf("Results: Result1=%ld, Result2=%ld | ", result1, result2);
+    printf("BRAM: Data Out1=0x%08X, Data Out2=0x%08X, Addr=%ld\n",
+           (unsigned int)bramDataOut1, (unsigned int)bramDataOut2, bramAddr);
+
+    printf("\n");
+}
+
+int main() {
+    while(1) {
+        printStatus();
+        usleep(1000000);
+    }
+    return 0;
+}

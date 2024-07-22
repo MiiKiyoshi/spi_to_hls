@@ -1,0 +1,5 @@
+C:\works\verilog\kria_prj\spi_add_100\vitis_hls\solution1\.autopilot\db\divide_sum.pp.0.cpp:172:5: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 10; i++) {
+    ^~~
+    VITIS_LOOP_10_1: 
+C:\works\verilog\kria_prj\spi_add_100\vitis_hls\solution1\.autopilot\db\divide_sum.pp.0.cpp:172:5: note: FIX-IT applied suggested code changes

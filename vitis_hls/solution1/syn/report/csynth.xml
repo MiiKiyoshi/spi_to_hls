@@ -1,0 +1,543 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xck26-sfvc784-2LV-c</Part>
+        <TopModelName>divide_sum</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.896</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>47</Best-caseLatency>
+            <Average-caseLatency>47</Average-caseLatency>
+            <Worst-caseLatency>47</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.470 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.470 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.470 us</Worst-caseRealTimeLatency>
+            <Interval-min>48</Interval-min>
+            <Interval-max>48</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_10_1>
+                <Slack>7.30</Slack>
+                <TripCount>10</TripCount>
+                <Latency>45</Latency>
+                <AbsoluteTimeLatency>450</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>37</PipelineDepth>
+                <InstanceList/>
+            </VITIS_LOOP_10_1>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>src_hls/divide_sum.cpp:10</SourceLocation>
+            <SummaryOfLoopViolations>
+                <VITIS_LOOP_10_1>
+                    <Name>VITIS_LOOP_10_1</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>src_hls/divide_sum.cpp:10</SourceLocation>
+                </VITIS_LOOP_10_1>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>4966</FF>
+            <LUT>3848</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>288</BRAM_18K>
+            <DSP>1248</DSP>
+            <FF>234240</FF>
+            <LUT>117120</LUT>
+            <URAM>64</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>divide_sum</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val1_address0</name>
+            <Object>in_val1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val1_ce0</name>
+            <Object>in_val1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val1_q0</name>
+            <Object>in_val1</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val2_address0</name>
+            <Object>in_val2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val2_ce0</name>
+            <Object>in_val2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_val2_q0</name>
+            <Object>in_val2</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_result1</name>
+            <Object>out_result1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_result1_ap_vld</name>
+            <Object>out_result1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_result2</name>
+            <Object>out_result2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_result2_ap_vld</name>
+            <Object>out_result2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>divide_sum</ModuleName>
+            <BindInstances>add_ln10_fu_142_p2 add_ln12_fu_186_p2 add_ln13_fu_205_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>divide_sum</Name>
+            <Loops>
+                <VITIS_LOOP_10_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.896</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>47</Best-caseLatency>
+                    <Average-caseLatency>47</Average-caseLatency>
+                    <Worst-caseLatency>47</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.470 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.470 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.470 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>48</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_10_1>
+                        <Name>VITIS_LOOP_10_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>10</TripCount>
+                        <Latency>45</Latency>
+                        <AbsoluteTimeLatency>0.450 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>37</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_10_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>src_hls/divide_sum.cpp:10</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_10_1>
+                            <Name>VITIS_LOOP_10_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>src_hls/divide_sum.cpp:10</SourceLocation>
+                        </VITIS_LOOP_10_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>4966</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>3848</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln10_fu_142_p2" SOURCE="src_hls/divide_sum.cpp:10" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_186_p2" SOURCE="src_hls/divide_sum.cpp:12" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_10_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_205_p2" SOURCE="src_hls/divide_sum.cpp:13" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln13"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_cosim trace_level="all" wave_debug="1"/>
+        <config_export output="C:/works/verilog/kria_prj/spi_add_100/vitis_hls"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="in_val1" index="0" direction="in" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="in_val1_address0" name="in_val1_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_val1_ce0" name="in_val1_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_val1_q0" name="in_val1_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="in_val2" index="1" direction="in" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="in_val2_address0" name="in_val2_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="in_val2_ce0" name="in_val2_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="in_val2_q0" name="in_val2_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_result1" index="2" direction="out" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="out_result1" name="out_result1" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_result1_ap_vld" name="out_result1_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_result2" index="3" direction="out" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="out_result2" name="out_result2" usage="data" direction="out"/>
+                <hwRef type="port" interface="out_result2_ap_vld" name="out_result2_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_val1_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="in_val1_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_val1_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in_val1"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_val1_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="in_val1_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_val1_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in_val1"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_val2_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="in_val2_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_val2_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in_val2"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="in_val2_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="in_val2_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>in_val2_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="in_val2"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_result1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="out_result1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_result1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="out_result1"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_result2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="out_result2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>out_result2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="out_result2"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="in_val1_address0">out, 4</column>
+                    <column name="in_val1_q0">in, 32</column>
+                    <column name="in_val2_address0">out, 4</column>
+                    <column name="in_val2_q0">in, 32</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="out_result1">ap_vld, out, 32</column>
+                    <column name="out_result2">ap_vld, out, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in_val1">in, int*</column>
+                    <column name="in_val2">in, int*</column>
+                    <column name="out_result1">out, int*</column>
+                    <column name="out_result2">out, int*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="in_val1">in_val1_address0, port, offset</column>
+                    <column name="in_val1">in_val1_ce0, port, </column>
+                    <column name="in_val1">in_val1_q0, port, </column>
+                    <column name="in_val2">in_val2_address0, port, offset</column>
+                    <column name="in_val2">in_val2_ce0, port, </column>
+                    <column name="in_val2">in_val2_q0, port, </column>
+                    <column name="out_result1">out_result1, port, </column>
+                    <column name="out_result1">out_result1_ap_vld, port, </column>
+                    <column name="out_result2">out_result2, port, </column>
+                    <column name="out_result2">out_result2_ap_vld, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="src_hls/divide_sum.cpp:2" status="valid" parentFunction="divide_sum" variable="in_val1" isDirective="0" options="mode=ap_memory port=in_val1"/>
+        <Pragma type="interface" location="src_hls/divide_sum.cpp:3" status="valid" parentFunction="divide_sum" variable="in_val2" isDirective="0" options="mode=ap_memory port=in_val2"/>
+        <Pragma type="interface" location="src_hls/divide_sum.cpp:4" status="valid" parentFunction="divide_sum" variable="out_result1" isDirective="0" options="mode=ap_vld port=out_result1"/>
+        <Pragma type="interface" location="src_hls/divide_sum.cpp:5" status="valid" parentFunction="divide_sum" variable="out_result2" isDirective="0" options="mode=ap_vld port=out_result2"/>
+        <Pragma type="pipeline" location="src_hls/divide_sum.cpp:11" status="valid" parentFunction="divide_sum" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

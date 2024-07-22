@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/.autopilot/db/divide_sum.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_1:  '
+    FileOffset:      10
+    FilePath:        'C:\works\verilog\kria_prj\spi_add_100\src_hls\divide_sum.cpp'
+    Replacements:    
+      - FilePath:        'C:\works\verilog\kria_prj\spi_add_100\vitis_hls\solution1\.autopilot\db\divide_sum.pp.0.cpp'
+        Offset:          10188
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_1: '
+...

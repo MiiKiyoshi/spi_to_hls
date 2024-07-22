@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "dsp2834x_examples.h": "c",
+        "dsp2834x_device.h": "c"
+    }
+}

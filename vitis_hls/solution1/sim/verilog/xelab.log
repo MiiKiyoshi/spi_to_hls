@@ -1,0 +1,41 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: G:/TOOLS/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_divide_sum_top glbl -Oenable_linking_all_libraries -prj divide_sum.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s divide_sum -debug all 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/AESL_automem_in_val1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_in_val1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/AESL_automem_in_val2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_in_val2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/divide_sum.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_divide_sum_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/divide_sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_sum
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/divide_sum_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_sum_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/divide_sum_sdiv_32ns_32ns_32_36_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_sum_sdiv_32ns_32ns_32_36_1_divider
+INFO: [VRFC 10-311] analyzing module divide_sum_sdiv_32ns_32ns_32_36_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.divide_sum_sdiv_32ns_32ns_32_36_...
+Compiling module xil_defaultlib.divide_sum_sdiv_32ns_32ns_32_36_...
+Compiling module xil_defaultlib.divide_sum_flow_control_loop_pip...
+Compiling module xil_defaultlib.divide_sum
+Compiling module xil_defaultlib.AESL_automem_in_val1
+Compiling module xil_defaultlib.AESL_automem_in_val2
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_divide_sum_top
+Compiling module work.glbl
+Built simulation snapshot divide_sum

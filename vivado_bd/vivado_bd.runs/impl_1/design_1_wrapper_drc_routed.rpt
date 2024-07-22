@@ -1,0 +1,185 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Jul 18 15:37:15 2024
+| Host         : MiKiyoshi running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| PDCN-1569 | Warning  | LUT equation term check    | 3          |
+| PDRC-153  | Warning  | Gated clock check          | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A5)+(A3*(~A5)*(~A2))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A5)+(A3*(~A5)*(~A2))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net design_1_i/spi_to_hls_0/inst/spi_slave_inst/r_miso_bit_reg_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/spi_to_hls_0/inst/spi_slave_inst/r_miso_bit_reg_LDC_i_1/O, cell design_1_i/spi_to_hls_0/inst/spi_slave_inst/r_miso_bit_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRARDADDR[5] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/Q[0]) which is driven by a register (design_1_i/spi_to_hls_0/inst/w_bram_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRARDADDR[6] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/Q[1]) which is driven by a register (design_1_i/spi_to_hls_0/inst/w_bram_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRARDADDR[7] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/Q[2]) which is driven by a register (design_1_i/spi_to_hls_0/inst/w_bram_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRARDADDR[8] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/Q[3]) which is driven by a register (design_1_i/spi_to_hls_0/inst/w_bram_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRBWRADDR[5] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/ADDRBWRADDR[0]) which is driven by a register (design_1_i/spi_to_hls_0/inst/ap_start_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRBWRADDR[6] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/ADDRBWRADDR[1]) which is driven by a register (design_1_i/spi_to_hls_0/inst/ap_start_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRBWRADDR[7] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/ADDRBWRADDR[2]) which is driven by a register (design_1_i/spi_to_hls_0/inst/ap_start_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ADDRBWRADDR[8] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/ADDRBWRADDR[3]) which is driven by a register (design_1_i/spi_to_hls_0/inst/ap_start_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/ENBWREN (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/ap_start) which is driven by a register (design_1_i/spi_to_hls_0/inst/ap_start_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[0] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/FSM_onehot_r_state_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[0] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_store_word_complete_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[1] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/FSM_onehot_r_state_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[1] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_select_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[1] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_store_word_complete_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[2] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/FSM_onehot_r_state_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[2] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_select_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[2] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_store_word_complete_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[3] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/FSM_onehot_r_state_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[3] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_select_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg has an input control pin design_1_i/spi_to_hls_0/inst/bram_val1_inst/ram_reg/WEA[3] (net: design_1_i/spi_to_hls_0/inst/bram_val1_inst/w_bram_we1) which is driven by a register (design_1_i/spi_to_hls_0/inst/r_store_word_complete_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+25 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS,
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0]
+ (the first 15 of 23 listed nets/buses).
+Related violations: <none>
+
+

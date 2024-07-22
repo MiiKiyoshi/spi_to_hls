@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "divide_sum",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "divide_sum"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_in_val1.v"
+sv xil_defaultlib "AESL_automem_in_val2.v"
+sv xil_defaultlib "divide_sum.autotb.v"
+sv xil_defaultlib "divide_sum.v"
+sv xil_defaultlib "divide_sum_flow_control_loop_pipe.v"
+sv xil_defaultlib "divide_sum_sdiv_32ns_32ns_32_36_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

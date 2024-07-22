@@ -1,0 +1,72 @@
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [HLS 200-10] Running 'G:/TOOLS/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Mikiyoshi' on host 'mikiyoshi' (Windows NT_amd64 version 6.2) on Fri Jun 28 16:59:04 +0900 2024
+INFO: [HLS 200-10] In directory 'C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csim/build'
+In file included from ../../../../src_hls/compute_elementwise_operations_sum.c:1:
+In file included from G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_int.h:10:
+In file included from G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_common.h:41:
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:47:2: error: "AP data type can only be used in C++"
+#error "AP data type can only be used in C++"
+ ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:133:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:133:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:136:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:136:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:139:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:139:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:142:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:142:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:145:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:145:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:148:1: error: unknown type name 'template'
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:148:10: error: expected identifier or '('
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:151:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:151:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:155:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:155:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+         ^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:159:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+G:/TOOLS/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\etc/ap_decl.h:159:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ERROR: [APCC 202-10] clang compile failed: child process exited abnormally
+ERROR: [APCC 202-1] ProcessSources failed
+INFO: [APCC 202-3] Tmp directory is C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csim/build/apcc_db_Mikiyoshi/146362668664290
+ERROR: [APCC 202-1] APCC failed.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.759 seconds; peak allocated memory: 7.844 MB.

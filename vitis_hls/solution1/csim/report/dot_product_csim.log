@@ -1,0 +1,18 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../src_hls/compute_elementwise_operations_sum.c in debug mode
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [HLS 200-10] Running 'G:/TOOLS/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Mikiyoshi' on host 'mikiyoshi' (Windows NT_amd64 version 6.2) on Fri Jun 28 16:27:03 +0900 2024
+INFO: [HLS 200-10] In directory 'C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is C:/works/verilog/kria_prj/spi_add_100/vitis_hls/solution1/csim/build/apcc_db_Mikiyoshi/24564747316217
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.157 seconds; peak allocated memory: 8.293 MB.
+   Generating csim.exe
+Result[0] (sum of elements): 10100
+Result[1] (difference of elements): 0
+Result[2] (product of elements): 171700
+Result[3] (quotient of elements): 383
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

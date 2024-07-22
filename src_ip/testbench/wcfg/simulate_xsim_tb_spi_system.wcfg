@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simulate_xsim_tb_spi_system.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_spi_system" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="73.345000 us"></ZoomStartTime>
+      <ZoomEndTime time="86.405001 us"></ZoomEndTime>
+      <Cursor1Time time="83.375000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">master</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_master/i_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/i_tx_data" type="array">
+         <obj_property name="ElementShortName">i_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/i_tx_valid" type="logic">
+         <obj_property name="ElementShortName">i_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">i_tx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/o_tx_ready" type="logic">
+         <obj_property name="ElementShortName">o_tx_ready</obj_property>
+         <obj_property name="ObjectShortName">o_tx_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/o_rx_valid" type="logic">
+         <obj_property name="ElementShortName">o_rx_valid</obj_property>
+         <obj_property name="ObjectShortName">o_rx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/o_rx_data" type="array">
+         <obj_property name="ElementShortName">o_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/o_sclk" type="logic">
+         <obj_property name="ElementShortName">o_sclk</obj_property>
+         <obj_property name="ObjectShortName">o_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/i_miso" type="logic">
+         <obj_property name="ElementShortName">i_miso</obj_property>
+         <obj_property name="ObjectShortName">i_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/o_mosi" type="logic">
+         <obj_property name="ElementShortName">o_mosi</obj_property>
+         <obj_property name="ObjectShortName">o_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/w_cpol" type="logic">
+         <obj_property name="ElementShortName">w_cpol</obj_property>
+         <obj_property name="ObjectShortName">w_cpol</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/w_cpha" type="logic">
+         <obj_property name="ElementShortName">w_cpha</obj_property>
+         <obj_property name="ObjectShortName">w_cpha</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_sclk_count" type="array">
+         <obj_property name="ElementShortName">r_sclk_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_sclk_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_sclk" type="logic">
+         <obj_property name="ElementShortName">r_sclk</obj_property>
+         <obj_property name="ObjectShortName">r_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_sclk_edges" type="array">
+         <obj_property name="ElementShortName">r_sclk_edges[4:0]</obj_property>
+         <obj_property name="ObjectShortName">r_sclk_edges[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_leading_edge" type="logic">
+         <obj_property name="ElementShortName">r_leading_edge</obj_property>
+         <obj_property name="ObjectShortName">r_leading_edge</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_trailing_edge" type="logic">
+         <obj_property name="ElementShortName">r_trailing_edge</obj_property>
+         <obj_property name="ObjectShortName">r_trailing_edge</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_tx_valid" type="logic">
+         <obj_property name="ElementShortName">r_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">r_tx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_tx_byte" type="array">
+         <obj_property name="ElementShortName">r_tx_byte[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_byte[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_rx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_rx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_rx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/r_tx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_tx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/SPI_MODE" type="array">
+         <obj_property name="ElementShortName">SPI_MODE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SPI_MODE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/CLK_HZ" type="array">
+         <obj_property name="ElementShortName">CLK_HZ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_HZ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/SCK_HZ" type="array">
+         <obj_property name="ElementShortName">SCK_HZ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SCK_HZ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/DIVISOR" type="array">
+         <obj_property name="ElementShortName">DIVISOR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DIVISOR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_master/CLKS_PER_HALF_BIT" type="array">
+         <obj_property name="ElementShortName">CLKS_PER_HALF_BIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLKS_PER_HALF_BIT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2" type="group">
+      <obj_property name="label">spi_to_hls</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/i_sclk" type="logic">
+         <obj_property name="ElementShortName">i_sclk</obj_property>
+         <obj_property name="ObjectShortName">i_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/o_miso" type="logic">
+         <obj_property name="ElementShortName">o_miso</obj_property>
+         <obj_property name="ObjectShortName">o_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/i_mosi" type="logic">
+         <obj_property name="ElementShortName">i_mosi</obj_property>
+         <obj_property name="ObjectShortName">i_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/i_ss_n" type="logic">
+         <obj_property name="ElementShortName">i_ss_n</obj_property>
+         <obj_property name="ObjectShortName">i_ss_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_rx_data" type="array">
+         <obj_property name="ElementShortName">w_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">w_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_state" type="array">
+         <obj_property name="ElementShortName">r_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_rx_valid" type="logic">
+         <obj_property name="ElementShortName">w_rx_valid</obj_property>
+         <obj_property name="ObjectShortName">w_rx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_byte_counter" type="array">
+         <obj_property name="ElementShortName">r_byte_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_byte_counter[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_store_addr_counter" type="array">
+         <obj_property name="ElementShortName">r_store_addr_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_store_addr_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_bram_addr" type="array">
+         <obj_property name="ElementShortName">w_bram_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">w_bram_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_data_buffer" type="array">
+         <obj_property name="ElementShortName">r_data_buffer[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data_buffer[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_bram_we1" type="logic">
+         <obj_property name="ElementShortName">w_bram_we1</obj_property>
+         <obj_property name="ObjectShortName">w_bram_we1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_bram_we2" type="logic">
+         <obj_property name="ElementShortName">w_bram_we2</obj_property>
+         <obj_property name="ObjectShortName">w_bram_we2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_store_vals_complete" type="logic">
+         <obj_property name="ElementShortName">w_store_vals_complete</obj_property>
+         <obj_property name="ObjectShortName">w_store_vals_complete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_load_vals_complete" type="logic">
+         <obj_property name="ElementShortName">w_load_vals_complete</obj_property>
+         <obj_property name="ObjectShortName">w_load_vals_complete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/w_load_result_complete" type="logic">
+         <obj_property name="ElementShortName">w_load_result_complete</obj_property>
+         <obj_property name="ObjectShortName">w_load_result_complete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_tx_valid" type="logic">
+         <obj_property name="ElementShortName">r_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">r_tx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_tx_data" type="array">
+         <obj_property name="ElementShortName">r_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_byte_counter" type="array">
+         <obj_property name="ElementShortName">r_byte_counter[1:0]</obj_property>
+         <obj_property name="ObjectShortName">r_byte_counter[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_load_addr_counter" type="array">
+         <obj_property name="ElementShortName">r_load_addr_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_load_addr_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/r_select" type="logic">
+         <obj_property name="ElementShortName">r_select</obj_property>
+         <obj_property name="ObjectShortName">r_select</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group83" type="group">
+      <obj_property name="label">hls</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_clk" type="logic">
+         <obj_property name="ElementShortName">ap_clk</obj_property>
+         <obj_property name="ObjectShortName">ap_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_rst" type="logic">
+         <obj_property name="ElementShortName">ap_rst</obj_property>
+         <obj_property name="ObjectShortName">ap_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_start" type="logic">
+         <obj_property name="ElementShortName">ap_start</obj_property>
+         <obj_property name="ObjectShortName">ap_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_done" type="logic">
+         <obj_property name="ElementShortName">ap_done</obj_property>
+         <obj_property name="ObjectShortName">ap_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_ready" type="logic">
+         <obj_property name="ElementShortName">ap_ready</obj_property>
+         <obj_property name="ObjectShortName">ap_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val1_address0" type="array">
+         <obj_property name="ElementShortName">in_val1_address0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">in_val1_address0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val1_q0" type="array">
+         <obj_property name="ElementShortName">in_val1_q0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_val1_q0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val2_address0" type="array">
+         <obj_property name="ElementShortName">in_val2_address0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">in_val2_address0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val2_q0" type="array">
+         <obj_property name="ElementShortName">in_val2_q0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_val2_q0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/out_result1" type="array">
+         <obj_property name="ElementShortName">out_result1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_result1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/out_result2" type="array">
+         <obj_property name="ElementShortName">out_result2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_result2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_idle" type="logic">
+         <obj_property name="ElementShortName">ap_idle</obj_property>
+         <obj_property name="ObjectShortName">ap_idle</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val1_ce0" type="logic">
+         <obj_property name="ElementShortName">in_val1_ce0</obj_property>
+         <obj_property name="ObjectShortName">in_val1_ce0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/in_val2_ce0" type="logic">
+         <obj_property name="ElementShortName">in_val2_ce0</obj_property>
+         <obj_property name="ObjectShortName">in_val2_ce0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/out_result1_ap_vld" type="logic">
+         <obj_property name="ElementShortName">out_result1_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">out_result1_ap_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/out_result2_ap_vld" type="logic">
+         <obj_property name="ElementShortName">out_result2_ap_vld</obj_property>
+         <obj_property name="ObjectShortName">out_result2_ap_vld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_CS_fsm" type="array">
+         <obj_property name="ElementShortName">ap_CS_fsm[0:0]</obj_property>
+         <obj_property name="ObjectShortName">ap_CS_fsm[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_CS_fsm_pp0_stage0" type="logic">
+         <obj_property name="ElementShortName">ap_CS_fsm_pp0_stage0</obj_property>
+         <obj_property name="ObjectShortName">ap_CS_fsm_pp0_stage0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter0" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter0</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter1" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter1</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter2" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter2</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter3" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter3</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter4" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter4</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter5" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter5</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter6" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter6</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter7" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter7</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter7</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter8" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter8</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter8</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter9" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter9</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter9</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter10" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter10</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter10</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter11" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter11</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter11</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter12" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter12</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter12</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter13" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter13</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter13</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter14" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter14</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter14</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter15" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter15</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter15</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter16" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter16</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter16</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter17" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter17</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter17</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter18" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter18</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter18</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter19" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter19</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter19</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter20" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter20</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter20</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter21" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter21</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter21</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter22" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter22</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter22</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter23" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter23</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter23</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter24" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter24</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter24</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter25" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter25</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter25</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter26" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter26</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter26</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter27" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter27</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter27</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter28" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter28</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter28</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter29" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter29</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter29</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter30" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter30</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter30</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter31" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter31</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter31</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter32" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter32</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter32</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter33" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter33</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter33</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter34" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter34</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter34</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter35" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter35</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter35</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_reg_pp0_iter36" type="logic">
+         <obj_property name="ElementShortName">ap_enable_reg_pp0_iter36</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_reg_pp0_iter36</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_idle_pp0" type="logic">
+         <obj_property name="ElementShortName">ap_idle_pp0</obj_property>
+         <obj_property name="ObjectShortName">ap_idle_pp0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_block_pp0_stage0_subdone" type="logic">
+         <obj_property name="ElementShortName">ap_block_pp0_stage0_subdone</obj_property>
+         <obj_property name="ObjectShortName">ap_block_pp0_stage0_subdone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_fu_136_p2" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_fu_136_p2[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_fu_136_p2[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_condition_exit_pp0_iter0_stage0" type="logic">
+         <obj_property name="ElementShortName">ap_condition_exit_pp0_iter0_stage0</obj_property>
+         <obj_property name="ObjectShortName">ap_condition_exit_pp0_iter0_stage0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_ready_int" type="logic">
+         <obj_property name="ElementShortName">ap_ready_int</obj_property>
+         <obj_property name="ObjectShortName">ap_ready_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_block_pp0_stage0_11001" type="logic">
+         <obj_property name="ElementShortName">ap_block_pp0_stage0_11001</obj_property>
+         <obj_property name="ObjectShortName">ap_block_pp0_stage0_11001</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter1_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter1_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter1_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter2_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter2_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter2_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter3_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter3_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter3_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter4_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter4_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter4_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter5_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter5_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter5_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter6_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter6_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter6_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter7_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter7_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter7_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter8_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter8_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter8_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter9_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter9_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter9_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter10_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter10_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter10_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter11_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter11_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter11_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter12_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter12_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter12_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter13_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter13_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter13_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter14_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter14_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter14_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter15_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter15_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter15_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter16_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter16_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter16_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter17_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter17_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter17_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter18_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter18_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter18_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter19_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter19_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter19_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter20_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter20_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter20_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter21_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter21_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter21_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter22_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter22_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter22_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter23_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter23_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter23_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter24_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter24_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter24_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter25_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter25_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter25_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter26_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter26_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter26_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter27_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter27_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter27_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter28_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter28_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter28_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter29_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter29_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter29_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter30_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter30_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter30_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter31_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter31_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter31_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter32_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter32_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter32_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter33_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter33_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter33_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln10_reg_264_pp0_iter34_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln10_reg_264_pp0_iter34_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln10_reg_264_pp0_iter34_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_fu_159_p2" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_fu_159_p2[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_fu_159_p2[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter2_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter2_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter2_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter3_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter3_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter3_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter4_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter4_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter4_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter5_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter5_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter5_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter6_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter6_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter6_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter7_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter7_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter7_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter8_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter8_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter8_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter9_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter9_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter9_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter10_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter10_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter10_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter11_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter11_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter11_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter12_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter12_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter12_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter13_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter13_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter13_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter14_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter14_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter14_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter15_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter15_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter15_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter16_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter16_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter16_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter17_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter17_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter17_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter18_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter18_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter18_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter19_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter19_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter19_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter20_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter20_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter20_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter21_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter21_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter21_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter22_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter22_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter22_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter23_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter23_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter23_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter24_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter24_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter24_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter25_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter25_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter25_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter26_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter26_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter26_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter27_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter27_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter27_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter28_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter28_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter28_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter29_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter29_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter29_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter30_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter30_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter30_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter31_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter31_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter31_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter32_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter32_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter32_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter33_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter33_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter33_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter34_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter34_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter34_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln12_reg_284_pp0_iter35_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln12_reg_284_pp0_iter35_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln12_reg_284_pp0_iter35_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_fu_171_p2" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_fu_171_p2[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_fu_171_p2[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter2_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter2_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter2_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter3_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter3_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter3_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter4_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter4_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter4_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter5_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter5_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter5_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter6_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter6_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter6_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter7_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter7_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter7_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter8_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter8_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter8_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter9_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter9_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter9_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter10_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter10_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter10_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter11_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter11_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter11_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter12_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter12_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter12_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter13_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter13_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter13_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter14_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter14_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter14_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter15_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter15_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter15_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter16_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter16_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter16_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter17_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter17_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter17_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter18_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter18_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter18_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter19_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter19_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter19_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter20_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter20_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter20_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter21_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter21_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter21_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter22_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter22_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter22_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter23_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter23_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter23_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter24_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter24_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter24_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter25_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter25_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter25_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter26_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter26_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter26_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter27_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter27_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter27_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter28_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter28_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter28_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter29_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter29_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter29_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter30_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter30_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter30_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter31_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter31_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter31_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter32_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter32_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter32_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter33_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter33_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter33_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter34_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter34_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter34_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/icmp_ln13_reg_294_pp0_iter35_reg" type="array">
+         <obj_property name="ElementShortName">icmp_ln13_reg_294_pp0_iter35_reg[0:0]</obj_property>
+         <obj_property name="ObjectShortName">icmp_ln13_reg_294_pp0_iter35_reg[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/zext_ln10_fu_148_p1" type="array">
+         <obj_property name="ElementShortName">zext_ln10_fu_148_p1[63:0]</obj_property>
+         <obj_property name="ObjectShortName">zext_ln10_fu_148_p1[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_block_pp0_stage0" type="logic">
+         <obj_property name="ElementShortName">ap_block_pp0_stage0</obj_property>
+         <obj_property name="ObjectShortName">ap_block_pp0_stage0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/i_fu_48" type="array">
+         <obj_property name="ElementShortName">i_fu_48[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fu_48[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/add_ln10_fu_142_p2" type="array">
+         <obj_property name="ElementShortName">add_ln10_fu_142_p2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">add_ln10_fu_142_p2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_init" type="logic">
+         <obj_property name="ElementShortName">ap_loop_init</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_sig_allocacmp_i_1" type="array">
+         <obj_property name="ElementShortName">ap_sig_allocacmp_i_1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ap_sig_allocacmp_i_1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/empty_fu_52" type="array">
+         <obj_property name="ElementShortName">empty_fu_52[31:0]</obj_property>
+         <obj_property name="ObjectShortName">empty_fu_52[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/add_ln12_fu_186_p2" type="array">
+         <obj_property name="ElementShortName">add_ln12_fu_186_p2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add_ln12_fu_186_p2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/empty_7_fu_56" type="array">
+         <obj_property name="ElementShortName">empty_7_fu_56[31:0]</obj_property>
+         <obj_property name="ObjectShortName">empty_7_fu_56[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/add_ln13_fu_205_p2" type="array">
+         <obj_property name="ElementShortName">add_ln13_fu_205_p2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add_ln13_fu_205_p2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/add2_fu_60" type="array">
+         <obj_property name="ElementShortName">add2_fu_60[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add2_fu_60[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_sig_allocacmp_add2_load" type="array">
+         <obj_property name="ElementShortName">ap_sig_allocacmp_add2_load[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ap_sig_allocacmp_add2_load[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/add154_fu_64" type="array">
+         <obj_property name="ElementShortName">add154_fu_64[31:0]</obj_property>
+         <obj_property name="ObjectShortName">add154_fu_64[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_sig_allocacmp_add154_load" type="array">
+         <obj_property name="ElementShortName">ap_sig_allocacmp_add154_load[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ap_sig_allocacmp_add154_load[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_block_pp0_stage0_01001" type="logic">
+         <obj_property name="ElementShortName">ap_block_pp0_stage0_01001</obj_property>
+         <obj_property name="ObjectShortName">ap_block_pp0_stage0_01001</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/grp_fu_165_p2" type="array">
+         <obj_property name="ElementShortName">grp_fu_165_p2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">grp_fu_165_p2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/grp_fu_177_p2" type="array">
+         <obj_property name="ElementShortName">grp_fu_177_p2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">grp_fu_177_p2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_done_reg" type="logic">
+         <obj_property name="ElementShortName">ap_done_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_done_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_continue_int" type="logic">
+         <obj_property name="ElementShortName">ap_continue_int</obj_property>
+         <obj_property name="ObjectShortName">ap_continue_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_done_int" type="logic">
+         <obj_property name="ElementShortName">ap_done_int</obj_property>
+         <obj_property name="ObjectShortName">ap_done_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter1_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter1_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter1_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter2_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter2_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter2_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter3_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter3_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter3_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter4_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter4_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter4_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter5_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter5_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter5_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter6_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter6_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter6_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter7_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter7_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter7_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter8_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter8_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter8_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter9_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter9_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter9_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter10_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter10_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter10_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter11_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter11_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter11_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter12_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter12_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter12_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter13_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter13_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter13_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter14_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter14_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter14_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter15_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter15_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter15_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter16_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter16_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter16_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter17_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter17_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter17_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter18_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter18_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter18_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter19_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter19_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter19_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter20_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter20_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter20_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter21_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter21_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter21_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter22_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter22_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter22_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter23_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter23_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter23_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter24_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter24_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter24_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter25_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter25_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter25_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter26_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter26_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter26_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter27_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter27_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter27_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter28_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter28_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter28_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter29_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter29_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter29_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter30_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter30_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter30_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter31_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter31_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter31_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter32_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter32_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter32_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter33_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter33_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter33_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter34_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter34_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter34_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_loop_exit_ready_pp0_iter35_reg" type="logic">
+         <obj_property name="ElementShortName">ap_loop_exit_ready_pp0_iter35_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_loop_exit_ready_pp0_iter35_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_NS_fsm" type="array">
+         <obj_property name="ElementShortName">ap_NS_fsm[0:0]</obj_property>
+         <obj_property name="ObjectShortName">ap_NS_fsm[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_enable_pp0" type="logic">
+         <obj_property name="ElementShortName">ap_enable_pp0</obj_property>
+         <obj_property name="ObjectShortName">ap_enable_pp0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_start_int" type="logic">
+         <obj_property name="ElementShortName">ap_start_int</obj_property>
+         <obj_property name="ObjectShortName">ap_start_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_condition_518" type="logic">
+         <obj_property name="ElementShortName">ap_condition_518</obj_property>
+         <obj_property name="ObjectShortName">ap_condition_518</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_condition_519" type="logic">
+         <obj_property name="ElementShortName">ap_condition_519</obj_property>
+         <obj_property name="ObjectShortName">ap_condition_519</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_ce_reg" type="logic">
+         <obj_property name="ElementShortName">ap_ce_reg</obj_property>
+         <obj_property name="ObjectShortName">ap_ce_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/hls_inst/ap_ST_fsm_pp0_stage0" type="logic">
+         <obj_property name="ElementShortName">ap_ST_fsm_pp0_stage0</obj_property>
+         <obj_property name="ObjectShortName">ap_ST_fsm_pp0_stage0</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group82" type="group">
+      <obj_property name="label">val1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/clk0" type="logic">
+         <obj_property name="ElementShortName">clk0</obj_property>
+         <obj_property name="ObjectShortName">clk0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/addr0" type="array">
+         <obj_property name="ElementShortName">addr0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/ce0" type="logic">
+         <obj_property name="ElementShortName">ce0</obj_property>
+         <obj_property name="ObjectShortName">ce0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/we0" type="logic">
+         <obj_property name="ElementShortName">we0</obj_property>
+         <obj_property name="ObjectShortName">we0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/q0" type="array">
+         <obj_property name="ElementShortName">q0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">q0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/d0" type="array">
+         <obj_property name="ElementShortName">d0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/clk1" type="logic">
+         <obj_property name="ElementShortName">clk1</obj_property>
+         <obj_property name="ObjectShortName">clk1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/addr1" type="array">
+         <obj_property name="ElementShortName">addr1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/ce1" type="logic">
+         <obj_property name="ElementShortName">ce1</obj_property>
+         <obj_property name="ObjectShortName">ce1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/we1" type="logic">
+         <obj_property name="ElementShortName">we1</obj_property>
+         <obj_property name="ObjectShortName">we1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/q1" type="array">
+         <obj_property name="ElementShortName">q1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">q1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/d1" type="array">
+         <obj_property name="ElementShortName">d1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/ram" type="array">
+         <obj_property name="ElementShortName">ram[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[0:9][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val1_inst/DEPTH" type="array">
+         <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group326" type="group">
+      <obj_property name="label">val2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/clk0" type="logic">
+         <obj_property name="ElementShortName">clk0</obj_property>
+         <obj_property name="ObjectShortName">clk0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/addr0" type="array">
+         <obj_property name="ElementShortName">addr0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/ce0" type="logic">
+         <obj_property name="ElementShortName">ce0</obj_property>
+         <obj_property name="ObjectShortName">ce0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/we0" type="logic">
+         <obj_property name="ElementShortName">we0</obj_property>
+         <obj_property name="ObjectShortName">we0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/q0" type="array">
+         <obj_property name="ElementShortName">q0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">q0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/d0" type="array">
+         <obj_property name="ElementShortName">d0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/clk1" type="logic">
+         <obj_property name="ElementShortName">clk1</obj_property>
+         <obj_property name="ObjectShortName">clk1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/addr1" type="array">
+         <obj_property name="ElementShortName">addr1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/ce1" type="logic">
+         <obj_property name="ElementShortName">ce1</obj_property>
+         <obj_property name="ObjectShortName">ce1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/we1" type="logic">
+         <obj_property name="ElementShortName">we1</obj_property>
+         <obj_property name="ObjectShortName">we1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/q1" type="array">
+         <obj_property name="ElementShortName">q1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">q1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/d1" type="array">
+         <obj_property name="ElementShortName">d1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/ram" type="array">
+         <obj_property name="ElementShortName">ram[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[0:9][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/bram_val2_inst/DEPTH" type="array">
+         <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group56" type="group">
+      <obj_property name="label">spi_slave</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_rx_valid" type="logic">
+         <obj_property name="ElementShortName">o_rx_valid</obj_property>
+         <obj_property name="ObjectShortName">o_rx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_rx_data" type="array">
+         <obj_property name="ElementShortName">o_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_tx_valid" type="logic">
+         <obj_property name="ElementShortName">i_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">i_tx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_tx_data" type="array">
+         <obj_property name="ElementShortName">i_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_sclk" type="logic">
+         <obj_property name="ElementShortName">i_sclk</obj_property>
+         <obj_property name="ObjectShortName">i_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_miso" type="logic">
+         <obj_property name="ElementShortName">o_miso</obj_property>
+         <obj_property name="ObjectShortName">o_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_mosi" type="logic">
+         <obj_property name="ElementShortName">i_mosi</obj_property>
+         <obj_property name="ObjectShortName">i_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_ss_n" type="logic">
+         <obj_property name="ElementShortName">i_ss_n</obj_property>
+         <obj_property name="ObjectShortName">i_ss_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_cpol" type="logic">
+         <obj_property name="ElementShortName">w_cpol</obj_property>
+         <obj_property name="ObjectShortName">w_cpol</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_cpha" type="logic">
+         <obj_property name="ElementShortName">w_cpha</obj_property>
+         <obj_property name="ObjectShortName">w_cpha</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_sclk" type="logic">
+         <obj_property name="ElementShortName">w_sclk</obj_property>
+         <obj_property name="ObjectShortName">w_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_miso_mux" type="logic">
+         <obj_property name="ElementShortName">w_miso_mux</obj_property>
+         <obj_property name="ObjectShortName">w_miso_mux</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_rx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_rx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_tx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_tx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_temp_rx_data" type="array">
+         <obj_property name="ElementShortName">r_temp_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_temp_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_data" type="array">
+         <obj_property name="ElementShortName">r_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_done" type="logic">
+         <obj_property name="ElementShortName">r_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r2_rx_done" type="logic">
+         <obj_property name="ElementShortName">r2_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r2_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r3_rx_done" type="logic">
+         <obj_property name="ElementShortName">r3_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r3_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_tx_data" type="array">
+         <obj_property name="ElementShortName">r_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_miso_bit" type="logic">
+         <obj_property name="ElementShortName">r_miso_bit</obj_property>
+         <obj_property name="ObjectShortName">r_miso_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_preload_miso" type="logic">
+         <obj_property name="ElementShortName">r_preload_miso</obj_property>
+         <obj_property name="ObjectShortName">r_preload_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/SPI_MODE" type="array">
+         <obj_property name="ElementShortName">SPI_MODE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SPI_MODE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_rst_n" type="logic">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_clk" type="logic">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_rx_valid" type="logic">
+         <obj_property name="ElementShortName">o_rx_valid</obj_property>
+         <obj_property name="ObjectShortName">o_rx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_rx_data" type="array">
+         <obj_property name="ElementShortName">o_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_tx_valid" type="logic">
+         <obj_property name="ElementShortName">i_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">i_tx_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_tx_data" type="array">
+         <obj_property name="ElementShortName">i_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_sclk" type="logic">
+         <obj_property name="ElementShortName">i_sclk</obj_property>
+         <obj_property name="ObjectShortName">i_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/o_miso" type="logic">
+         <obj_property name="ElementShortName">o_miso</obj_property>
+         <obj_property name="ObjectShortName">o_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_mosi" type="logic">
+         <obj_property name="ElementShortName">i_mosi</obj_property>
+         <obj_property name="ObjectShortName">i_mosi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/i_ss_n" type="logic">
+         <obj_property name="ElementShortName">i_ss_n</obj_property>
+         <obj_property name="ObjectShortName">i_ss_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_cpol" type="logic">
+         <obj_property name="ElementShortName">w_cpol</obj_property>
+         <obj_property name="ObjectShortName">w_cpol</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_cpha" type="logic">
+         <obj_property name="ElementShortName">w_cpha</obj_property>
+         <obj_property name="ObjectShortName">w_cpha</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_sclk" type="logic">
+         <obj_property name="ElementShortName">w_sclk</obj_property>
+         <obj_property name="ObjectShortName">w_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/w_miso_mux" type="logic">
+         <obj_property name="ElementShortName">w_miso_mux</obj_property>
+         <obj_property name="ObjectShortName">w_miso_mux</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_rx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_rx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_tx_bit_count" type="array">
+         <obj_property name="ElementShortName">r_tx_bit_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_bit_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_temp_rx_data" type="array">
+         <obj_property name="ElementShortName">r_temp_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_temp_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_data" type="array">
+         <obj_property name="ElementShortName">r_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_rx_done" type="logic">
+         <obj_property name="ElementShortName">r_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r2_rx_done" type="logic">
+         <obj_property name="ElementShortName">r2_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r2_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r3_rx_done" type="logic">
+         <obj_property name="ElementShortName">r3_rx_done</obj_property>
+         <obj_property name="ObjectShortName">r3_rx_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_tx_data" type="array">
+         <obj_property name="ElementShortName">r_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_miso_bit" type="logic">
+         <obj_property name="ElementShortName">r_miso_bit</obj_property>
+         <obj_property name="ObjectShortName">r_miso_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/r_preload_miso" type="logic">
+         <obj_property name="ElementShortName">r_preload_miso</obj_property>
+         <obj_property name="ObjectShortName">r_preload_miso</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_spi_system/uut_spi_to_hls/spi_slave_inst/SPI_MODE" type="array">
+         <obj_property name="ElementShortName">SPI_MODE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SPI_MODE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

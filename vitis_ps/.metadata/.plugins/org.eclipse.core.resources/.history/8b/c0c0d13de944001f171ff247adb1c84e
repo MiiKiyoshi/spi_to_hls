@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <unistd.h>
+#include "spi_to_hls_driver.h"
+
+#define ANSI_CURSOR_HOME "\033[H"
+#define ANSI_ERASE_SCREEN "\033[2J"
+
+void initializeScreen() {
+    printf(ANSI_CURSOR_HOME ANSI_ERASE_SCREEN "SPI to HLS Status Monitor\n");
+    printf("-------------------------\n\n");
+    printf("System Control: Reset=\n\n");
+    printf("SPI Status: Store Word=, Store Vals=, Load Vals=\n");
+    printf("            Byte Counter=, Store Addr=, Load Addr=, State=\n\n");
+    printf("SPI Data: RX Valid=, TX Valid=, RX=, TX=\n");
+    printf("Data Buffer:\n\n");
+    printf("HLS Status: Done Latch=, Select=, Start=\n");
+    printf("            Done=, Idle=, Ready=\n\n");
+    printf("Results: R1=, R2=\n");
+    printf("BRAM: Out1=, Out2=, Addr=\n");
+    fflush(stdout);
+}
+
+void updateValues() {
+    uint32_t systemControl = SYSTEM_CONTROL;
+    uint32_t spiStatus = SPI_STATUS;
+    uint32_t spiData = SPI_DATA;
+    uint32_t dataBuffer = DATA_BUFFER;
+    uint32_t hlsStatus = HLS_STATUS;
+    int32_t result1 = RESULT1;
+    int32_t result2 = RESULT2;
+    uint32_t bramDataOut1 = BRAM_DATA_OUT1;
+    uint32_t bramDataOut2 = BRAM_DATA_OUT2;
+    uint32_t bramAddr = BRAM_ADDR;
+
+    printf(ANSI_CURSOR_HOME "\033[3;23H%lu", systemControl & 0x1);
+
+    printf("\033[5;24H%lu\033[5;39H%lu\033[5;54H%lu",
+           (spiStatus >> 18) & 1, (spiStatus >> 17) & 1, (spiStatus >> 16) & 1);
+    printf("\033[6;26H%lu\033[6;41H%lu\033[6;55H%lu\033[6;66H%lu",
+           (spiStatus >> 10) & 3, (spiStatus >> 6) & 0xF, (spiStatus >> 2) & 0xF, spiStatus & 3);
+
+    printf("\033[8;22H%lu\033[8;35H%lu\033[8;43H0x%02X\033[8;51H0x%02X",
+           (spiData >> 17) & 1, (spiData >> 16) & 1,
+           (unsigned int)((spiData >> 8) & 0xFF), (unsigned int)(spiData & 0xFF));
+    printf("\033[9;13H0x%08lX", dataBuffer);
+
+    printf("\033[11;24H%lu\033[11;35H%lu\033[11;45H%lu",
+           (hlsStatus >> 5) & 1, (hlsStatus >> 4) & 1, (hlsStatus >> 3) & 1);
+    printf("\033[12;18H%lu\033[12;27H%lu\033[12;36H%lu",
+           (hlsStatus >> 2) & 1, (hlsStatus >> 1) & 1, hlsStatus & 1);
+
+    printf("\033[14;12H%ld\033[14;20H%ld", result1, result2);
+    printf("\033[15;11H0x%08X\033[15;27H0x%08X\033[15;43H%lu",
+           (unsigned int)bramDataOut1, (unsigned int)bramDataOut2, bramAddr);
+
+    fflush(stdout);
+}
+
+int main() {
+    initializeScreen();
+    while(1) {
+        updateValues();
+        usleep(100000);  // 0.1√  ¥Î±‚
+    }
+    return 0;
+}
